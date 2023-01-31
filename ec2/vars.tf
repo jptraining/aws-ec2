@@ -14,8 +14,10 @@ variable "port" {
 }
 
 variable "user_data" {
+  default = "nada"
 }
 
 variable "security_group_ids" {
   type = list(string)
+  default = [ "value" ]
 }

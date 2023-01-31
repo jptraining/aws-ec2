@@ -6,8 +6,8 @@ resource "aws_instance" "vm-ec2" {
   ami           = var.ami
   instance_type = "t2.micro"
   tags          = { Name = var.name }
-  user_data = file(var.user_data)
+#  user_data = file(var.user_data)
   key_name = "cle_ssh_jerome"
-  vpc_security_group_ids = var.security_group_ids
+#  vpc_security_group_ids = var.security_group_ids
 #  subnet_id = var.subnet_id
 }
